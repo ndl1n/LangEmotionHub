@@ -16,25 +16,25 @@ LangEmotionHub 是一個提供情感支持與陪伴的智能平台。透過模�
 - 模擬指定對象的語氣與風格
 - 保存長者智慧與回憶，延續情感連結
 
-![指定對象模仿介面](images/mimic_interface.png)
+![上傳訓練資料與模型訓練介面.jpg](img/上傳訓練資料與模型訓練介面.jpg)
 
 ### 2. 事件記事本
 - 記錄使用者事件資料
 - 運用 RAG 技術增強對話理解
 - 提高互動準確性與深度
 
-![事件記事本介面](images/event_notebook.png)
+![事件記事本介面](img/事件記事本介面.jpg)
 
 ### 3. 個性化聊天模型
 - 模型會隨互動學習使用者語氣
 - 支援使用者評估調整模型表現
 - 可分享模型給親友或保存作為替身
 
-![個性化聊天模型介面](images/personal_chat_model.png)
+![個性化聊天模型介面](img/個性化聊天模型介面.jpg)
 
 ## 技術架構
 
-![技術架構圖](images/architecture.png)
+![技術架構圖](img/技術架構圖.png)
 
 1. **Web App**
    - 上傳聊天紀錄並進行模型微調
@@ -51,6 +51,7 @@ LangEmotionHub 是一個提供情感支持與陪伴的智能平台。透過模�
      1. 資料預處理：聊天紀錄轉 CSV，分詞並轉 token
      2. 模型量化：BitsAndBytes 4-bit，降低 RAM 需求
      3. LoRa 微調：自監督 Parameter Efficient Fine-tuning
+     ![微調後模型效果](img/微調後模型效果.png)
 
 ## 使用成果
 - 模型能精準回應問題，模擬指定對象語氣與風格
